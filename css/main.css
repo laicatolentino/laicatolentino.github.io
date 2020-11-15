@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+html {
+	/* font, colours, backgrounds */
+	--background: #efe7e2;
+  --top-nav: #e1bf00;
+  --primary-a: #000;
+  --primary-b: #000;
+
+	--accent-1: #fff;
+  --accent-2: #000;
+}
+
+*{
+  border: 0px solid var(--accent-1);
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--background);
+}
+
+p {
+  line-height: 1.5em;
+  margin: 1em 0;
+  color: var(--top-nav);
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  color: var(--primary-a);
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  line-height: 0px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  padding: 0;
+  color: var(--accent-1);
+}
+
+h3 {
+  line-height: 0px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  padding: 0;
+  color: var(--primary-a);
+}
+
+a,  a:visited {
+  text-decoration: none;
+  color: var(--accent-1);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--primary-b);
+}
+
+/************** HEADER *************/
+/* direct child of: .menu > a */
+/* descendent of: .menu a */
+
+.topnav {
+  background-color: var(--top-nav);
+  padding: 0em;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.logo {
+  padding: 0.5em 0.5em 0.2em;
+  float: left;
+}
+
+.menunav {
+  background-color: var(--top-nav);
+  overflow: hidden;
+}
+
+.menunav a {
+  float: right;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary-b);
+  text-align: center;
+  padding: 1em 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.menunav a:hover {
+    background-color: var(--top-nav);
+    color: var(--accent-1);
+}
+
+.menunav .hamburger {
+    display: none;
+}
+
+.serviceOne, .serviceTwo, .serviceThree {
+  width: 100%;
+  text-align: center;
+}
+
+
+/*** END HEADER ****/
+
+*, *:before, *:after {
+  box-sizing:border-box;
+}
+
+
+/****
+CONTENT
+****/
+
+
+.content{
+  background-color: var(--background);
+  width: 500px;
+  margin: 5px auto;
+}
+
+.content-smaller{
+  width: 500px;
+}
+
+.sneaker-service{
+  margin: -1em 2em;
+  width: 13em;
+  border: 1px var(--accent-2) solid;
+}
+
+.sneakerService {
+  color: var(--background);
+  text-transform: uppercase;
+  font-size: 1.1em;
+
+}
+
+/*****
+PRODUCTS 
+*****/
+
+.products {
+  display: grid;
+  grid-gap: 1em;
+}
+
+.grid-view {
+  grid-template-columns: 1fr 1fr;
+}
+
+.product {
+  text-align: center;
+  line-height: 1;
+  padding: 45em 1em 0.5em 1em;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.dark {
+  background-color: var(--primary-a);
+  color: var(--background);
+}
+
+.light {
+  background-color: var(--background);
+  color: var(--primary-a);
+  border: 1px var(--accent-2) solid;
+}
+
+.shoeBrushKit {
+  background-image: url(../img/shoebrushkit.png);
+}
+
+.shoeBrush {
+  background-image: url(../img/shoe-brush.png);
+}
+
+.cleaner {
+  background-image: url(../img/cleaner.jpg);
+}
+
+.walrusOil {
+  background-image: url(../img/walrus-Oil.png);
+}
+
+.cureProKit {
+  background-image: url(../img/cure-pro-kit.png);
+}
+
+.shoeCareValet {
+  background-image: url(../img/shoe-care-valet.png);
+}
+
+.proPastePolish {
+  background-image: url(../img/pro-paste-polish.png);
+}
+
+.jason-repel {
+  background-image: url(../img/jasonmark-repel.png);
+}
+
+.scuffEraser{
+  background-image: url(../img/scuffEraser.png);
+}
+
+.horseHairBrush{
+  background-image: url(../img/horse-hair-brush.png);
+}
+
+#shoeBrushKit:hover, #shoeBrush:hover, #cleaner:hover, #walrusOil:hover, #cureProKit:hover, #shoeCareValet:hover, #jason-repel:hover, #scuffEraser:hover, #horseHairBrush:hover {
+  opacity: 0.5;
+}
+
+.product-name{
+  font-size: 2em;
+  font-weight: 500;
+}
+.product-info {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  background-color: var(--accent-2);
+  color: var(--background);
+  margin-bottom: -1em;
+}
+.product-price{
+  font-size: 1.2em;
+  color: var(--background);
+  line-height: 1.5em;
+  background-color:var(--accent-2);
+}
+.product-price:before{
+  content: "$";
+}
+
+/*** pagination ***/
+.previous:before{
+  content: "<<";
+}
+
+.next:after {
+  content: ">>";
+}
+.next {
+  padding-left: 2em;
+}
+
+.nav-pagination {
+  text-align: center;
+}
+ul#pagination li {
+  display: inline;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  padding: 0 1em 0 1em;
+}
+
+/*** Buttons ***/
+.add-cart-btn {
+	background-color: var(--primary-b); 
+	border: none;
+	border-radius: 4px;
+	color: #000;
+	padding: 0.2em 0.2em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1em;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.add-cart-btn:hover {
+	background-color: var(--primary-a); 
+	color: var(--background);
+  }
+
+.gridBtn {
+	background-color: var(--primary-b); 
+	border: none;
+	border-radius: 4px;
+	color: #000;
+	padding: 0.2em 0.2em;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5em;
+	-webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.gridBtn:hover {
+  background-color: var(--primary-a); 
+	color: var(--background);
+}
+
+.products-found {
+  text-align: center;
+  color: var(--accent-2);
+}
+
+/***********************************
+FOOTER
+***********************************/
+
+#facebook:hover {
+  content: url('../img/facebookHoverIcon.png');
+}
+
+#twitter:hover {
+  content: url('../img/twitterIconHover.png');
+}
+
+#instagram:hover {
+  content: url('../img/instagramHoverIcon.png');
+}
+
+
+.footer{
+    background-color: var(--top-nav);
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 20px auto 0px 0px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.copyright{
+  color: var(--background);
+}
+
+/***
+Resources
+
+Shoe Brush Kit
+https://www.staples.ca/products/2549310-en-moneysworth-best-30120-cedar-valet-10-piece-set?variant=19664723673157&CID=PS%3AGS%3ACA%3A%3Apla-297653556215%3A%3A67992702126%3Apla%3A1780428600&CampaignID=1780428600&gclid=CjwKCAiA27LvBRB0EiwAPc8XWWy7JMPRTaWWjCed4H6GpVec9d2BsHvj3usJ2yYN02NSk9VrL5VmSxoCOb4QAvD_BwE
+
+Shoe Cleaner with brush
+https://www.amazon.ca/Moneysworth-Best-26600-Cleaner-Brush/dp/B01ICP1KEE/ref=asc_df_B01ICP1KEE/?tag=googleshopc0c-20&linkCode=df0&hvadid=335294910644&hvpos=1o34&hvnetw=g&hvrand=6910124338887061070&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9000967&hvtargid=pla-435708606170&psc=1
+
+Walrus Oil
+https://www.amazon.ca/dp/B07PY8Y4TQ/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B07PY8Y4TQ&pd_rd_w=cQeWd&pf_rd_p=4b7c8c1c-293f-4b1e-a49a-8787dff31bcb&pd_rd_wg=oHf1S&pf_rd_r=9PRCKXA4VYFB2YXKNNRT&pd_rd_r=ea3de2a2-122d-4f32-b2f3-661a20297c99&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVFpJTjFPUlRXWTVTJmVuY3J5cHRlZElkPUEwOTM1ODkzMVNXVU5NUkpVSVNTSSZlbmNyeXB0ZWRBZElkPUExMDMwMjY4QlhRWEFKQ1lQS09ZJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==
+
+Cure Protective Kit
+https://www.footlocker.ca/product/~/9585048.html?SID=5566&inceptor=1&cm_mmc=paid%20search-_-google-_-g-_-PLA-_-DPA-_--_-P-_-Prospecting-_--_-6557486065-_--_-85484773104-_-PLA-_-9585048-_--_--_-&gclid=CjwKCAiAob3vBRAUEiwAIbs5TtIpQhyWGEd3_Ei3v5NH6GaEddts-zvn2oTzKkz3viRuHfowch6qXxoCODgQAvD_BwE&gclsrc=aw.ds
+
+Shoe Care Valet
+https://wayfair.ca/Woodlore--Shoe-Care-Valet-with-Starter-Kit-II-86111-L3763-K~WAG1076.html?refid=GX185268883861-WAG1076&device=c&ptid=168793706883&targetid=pla-168793706883&network=g&ireid=9867833&gclid=CjwKCAiAxMLvBRBNEiwAKhr-nMdu3yAzoFYwgB1Vd5ZUTTtIJOWxcIf3lSQsSckcIWYDp0PTVRjtfRoCp9AQAvD_BwE
+
+Professional Paste Polish
+https://www.amazon.ca/Moneysworth-Best-Professional-Polish-Neutral/dp/B007Z07ZHY/ref=asc_df_B007Z07ZHY/?tag=googleshopc0c-20&linkCode=df0&hvadid=292949951485&hvpos=1o17&hvnetw=g&hvrand=13308328198342501296&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9000967&hvtargid=pla-307204275256&psc=1
+
+repel 
+https://www.amazon.ca/Jason-Markk-Unisex-Repel-Refill/dp/B07F2NZBZ4/ref=asc_df_B07F2NZBZ4/?tag=googleshopc0c-20&linkCode=df0&hvadid=337480883940&hvpos=2o3&hvnetw=g&hvrand=15935379445391116902&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061009&hvtargid=pla-584236312930&psc=1
+
+scuff 
+https://www.amazon.ca/Crep-Protect-Spray-U/dp/B07WNYRWG5/ref=pd_sbs_309_8?_encoding=UTF8&pd_rd_i=B0193QJPKC&pd_rd_r=b18791b7-4ee6-4737-8028-24803f0ce944&pd_rd_w=oYPeP&pd_rd_wg=vE76I&pf_rd_p=c7838c3c-6de6-46ad-946c-b7318af714fb&pf_rd_r=44VD08ZW0G9G9DHXRS5W&refRID=44VD08ZW0G9G9DHXRS5W&th=1
+
+horsehair brush
+https://www.amazon.ca/Horsehair-Bristle-Cleaning-Polishing-Leather/dp/B07Q34ML2Y/ref=pd_sbs_309_8?_encoding=UTF8&pd_rd_i=B07Q34ML2Y&pd_rd_r=37b5a2ef-925b-4240-90d7-d52011536e8e&pd_rd_w=koxBP&pd_rd_wg=La5Pa&pf_rd_p=c7838c3c-6de6-46ad-946c-b7318af714fb&pf_rd_r=0ESJG4YP8TAMPD37WBHV&psc=1&refRID=0ESJG4YP8TAMPD37WBHV
+
+pagination
+https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_pagination
+***/
