@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+.header-color {
+  background: #336699;  /* fallback for old browsers */
+ 
+}
+
+body {
+  background: #99cccc;
+  font-family: 'Raleway', sans-serif;
+
+}
+.landing-grid {
+  background: #99cccc;  
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+/* Resume Page css */
+
+.resume-right-col {
+  font-family: 'Raleway', sans-serif;
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+/* contact page css */
+
+.contact-body {
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 550px;
+  background: #99cccc;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: 'Hoefler Text', sans-serif;
+}
+
+.contact-grid p {
+  font-family: 'Hoefler Text', sans-serif;
+  font-weight: bold;
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list i {
+  font-size: 66px;
+  padding-right: 5rem;
+}
+
+
+/* contact page css */
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+  border-radius: 50%;
+
+}
+
+.banner-text {
+  font-family: 'Raleway', sans-serif;
+  background-color: #99cccc;
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 66px;
+  font-weight: bold;
+  color: black;
+}
+
+.banner-text hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 20px;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 2em;
+  padding: 8px;
+}
